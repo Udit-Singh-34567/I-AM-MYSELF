@@ -1,5 +1,8 @@
 import { Hero } from "@/components/hero/Hero";
+import { About } from "@/components/about/About";
+import { HowIBuild } from "@/components/build/HowIBuild";
 import { Navigation } from "@/components/navigation/Navigation";
+import { SelectedWork } from "@/components/projects/SelectedWork";
 import { CustomCursor } from "@/components/ui/CustomCursor";
 import { DraftingGrid } from "@/components/ui/DraftingGrid";
 
@@ -12,9 +15,9 @@ export default function Home() {
     <DraftingGrid />
     <Navigation />
     <Hero />
-    <FutureSection id="about" />
-    <FutureSection id="work" />
-    <FutureSection id="build" />
+    <About />
+    <SelectedWork />
+    <HowIBuild />
     <FutureSection id="experience" />
     <FutureSection id="lab" />
     <FutureSection id="beyond" />
