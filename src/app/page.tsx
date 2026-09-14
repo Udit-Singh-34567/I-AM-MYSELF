@@ -1,6 +1,7 @@
 import { Hero } from "@/components/hero/Hero";
 import { About } from "@/components/about/About";
 import { HowIBuild } from "@/components/build/HowIBuild";
+import { ExperienceTimeline } from "@/components/experience/ExperienceTimeline";
 import { Navigation } from "@/components/navigation/Navigation";
 import { SelectedWork } from "@/components/projects/SelectedWork";
 import { CustomCursor } from "@/components/ui/CustomCursor";
@@ -18,7 +19,7 @@ export default function Home() {
     <About />
     <SelectedWork />
     <HowIBuild />
-    <FutureSection id="experience" />
+    <ExperienceTimeline />
     <FutureSection id="lab" />
     <FutureSection id="beyond" />
     <FutureSection id="contact" />
