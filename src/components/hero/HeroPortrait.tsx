@@ -3,7 +3,7 @@
 
 import { useState } from "react";
 
-const portraitSource = "/images/udit-portrait.jpg";
+const portraitSource = "/images/udit-portrait.avif";
 
 export function HeroPortrait() {
   const [hasPortrait, setHasPortrait] = useState(true);
