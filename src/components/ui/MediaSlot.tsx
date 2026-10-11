@@ -32,7 +32,7 @@ export function MediaSlot({
           <div className="media-slot-viewport">
             <img
               className="media-slot-image"
-              src={src}
+              src={assetPath(src)}
               alt={alt}
               onLoad={() => setHasMedia(true)}
               onError={() => setHasMedia(false)}
@@ -80,7 +80,7 @@ export function MediaSlot({
             className="media-lightbox-content"
             onClick={(event) => event.stopPropagation()}
           >
-            <img src={src} alt={alt} />
+            <img src={assetPath(src)} alt={alt} />
           </div>
         </div>
       )}
