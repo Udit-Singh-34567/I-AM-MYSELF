@@ -13,7 +13,7 @@ export const chapters = [
   { id: "work", number: "03", label: "SELECTED WORK" },
   { id: "build", number: "04", label: "HOW I BUILD" },
   { id: "experience", number: "05", label: "EXPERIENCE" },
-  { id: "lab", number: "06", label: "LAB" },
-  { id: "beyond", number: "07", label: "BEYOND CODE" },
-  { id: "contact", number: "08", label: "LET'S BUILD" },
+  //{ id: "lab", number: "00", label: "LAB" },
+  { id: "beyond", number: "06", label: "BEYOND CODE" },
+  { id: "contact", number: "07", label: "LET'S BUILD" },
 ] as const;

@@ -1,4 +1,5 @@
 import { projects } from "@/data/projects";
+import { MediaSlot } from "@/components/ui/MediaSlot";
 
 export function SelectedWork() {
   const [featured, ...remaining] = projects;
@@ -17,12 +18,12 @@ export function SelectedWork() {
 
     <article className="featured-project">
       <div className="project-serial"><span>{featured.number}</span><span>{featured.category}</span></div>
-      <div className="project-geometry" aria-hidden="true"><span /><span /><span /></div>
+      <MediaSlot className="project-media project-media--featured" src={featured.media} alt={`${featured.title} project preview`} label="FEATURED PROJECT" />
       <div className="featured-project-content">
         <h3>{featured.title}</h3>
         <p>{featured.description}</p>
         <ul className="tech-list" aria-label={`${featured.title} technologies`}>{featured.stack.map((tech) => <li key={tech}>{tech}</li>)}</ul>
-        <span className="case-note">CASE NOTE IN DEVELOPMENT <span aria-hidden="true">↗</span></span>
+        <span className="case-note"><span aria-hidden="true">↗</span></span>
       </div>
     </article>
 
@@ -32,6 +33,9 @@ export function SelectedWork() {
         <div className="project-row-main"><p className="project-category">{project.category}</p><h3>{project.title}</h3></div>
         <p className="project-row-description">{project.description}</p>
         <ul className="tech-list project-row-stack" aria-label={`${project.title} technologies`}>{project.stack.map((tech) => <li key={tech}>{tech}</li>)}</ul>
+        { /* <div className="project-row-aside">
+           <MediaSlot className="project-media project-media--row" src={project.media} alt={`${project.title} project preview`} label="PROJECT IMAGE" /> 
+        </div> */ }
       </article>)}
     </div>
   </section>;

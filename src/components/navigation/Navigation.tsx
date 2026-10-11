@@ -11,14 +11,14 @@ export function Navigation() {
     const observer = new IntersectionObserver((entries) => {
       const visible = entries.filter((entry) => entry.isIntersecting).sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
       if (visible) setActive(chapters.find((chapter) => chapter.id === visible.target.id) ?? chapters[0]);
-    }, { rootMargin: "-35% 0px -50% 0px", threshold: [0, 0.1, 0.3] });
+    }, { rootMargin: "-35% 0px -50% 0px", threshold: [0, 0.2, 0.6] });
     sections.forEach((section) => observer.observe(section));
     return () => observer.disconnect();
   }, []);
 
   return <header className="site-header">
     <a className="site-mark" href="#entry" aria-label={`${site.name}, return to entry`}>{site.mark}<span>.</span></a>
-    <div className="chapter-status" aria-live="polite"><span>{active.number} / 08</span><span className="status-label">— {active.label}</span></div>
+    <div className="chapter-status" aria-live="polite"><span>{active.number} / 07</span><span className="status-label">— {active.label}</span></div>
     <nav aria-label="Primary navigation"><a href="#work">INDEX <span aria-hidden="true">↘</span></a></nav>
   </header>;
 }

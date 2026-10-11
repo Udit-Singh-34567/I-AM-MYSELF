@@ -12,7 +12,7 @@ export function CapabilityMatrix() {
       {capabilities.map((capability) => <button key={capability.id} type="button" aria-pressed={activeId === capability.id} aria-controls="capability-panel" onClick={() => setActiveId(capability.id)}><span>{capability.number}</span>{capability.label}<i aria-hidden="true">↘</i></button>)}
     </div>
     <div id="capability-panel" className="capability-panel" role="region" aria-live="polite" aria-label={`${active.label} capabilities`}>
-      <div className="capability-panel-heading"><span>{active.number} / 04</span><h3>{active.label}</h3></div>
+      <div className="capability-panel-heading"><span>{active.number} / 05</span><h3>{active.label}</h3></div>
       <p>{active.description}</p>
       <ul>{active.tools.map((tool, index) => <li key={tool}><span>{String(index + 1).padStart(2, "0")}</span>{tool}</li>)}</ul>
     </div>

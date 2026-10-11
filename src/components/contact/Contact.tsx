@@ -8,7 +8,7 @@ const links = [
 
 export function Contact() {
   return <section id="contact" className="contact-section" aria-labelledby="contact-title">
-    <header className="section-heading"><span className="section-number">08</span><h2 id="contact-title">LET&apos;S BUILD</h2><span className="section-rule" aria-hidden="true" /><span className="section-tag">OPEN CHANNEL</span></header>
+    <header className="section-heading"><span className="section-number">07</span><h2 id="contact-title">LET&apos;S BUILD</h2><span className="section-rule" aria-hidden="true" /><span className="section-tag">OPEN CHANNEL</span></header>
     <div className="contact-body">
       <p className="mono-label">HAVE AN INTERESTING PROBLEM?</p>
       <h3>LET&apos;S BUILD<br /><em>SOMETHING.</em></h3>

@@ -5,6 +5,7 @@ export const projects = [
     title: "ValueUTickets.com",
     description: "An end-to-end flight booking CRM covering booking workflows, an admin dashboard, and automated mail scheduling.",
     stack: ["Vue.js", "Django REST", "MySQL"],
+    media: "/images/projects/valueuticketsbanner.jpeg",
     featured: true,
   },
   {
@@ -13,6 +14,7 @@ export const projects = [
     title: "GripChain.in",
     description: "A MEVN-stack storefront with product management, authentication, and order workflows, tuned for database performance at scale.",
     stack: ["MongoDB", "Express", "Vue", "Node"],
+    //media: "/images/projects/gripchainbanner.jpeg",
   },
   {
     number: "03",
@@ -20,6 +22,7 @@ export const projects = [
     title: "Bug Prediction System",
     description: "A model that flags high-risk code modules ahead of release, reaching roughly 85% prediction accuracy through feature engineering.",
     stack: ["Python", "Pandas", "Scikit-learn"],
+    //media: "/images/projects/bug-prediction/banner.jpg",
   },
   {
     number: "04",
@@ -27,5 +30,6 @@ export const projects = [
     title: "Multi-Platform To-Do",
     description: "One codebase running on web, mobile, and desktop, kept in sync across devices through a REST API.",
     stack: ["Flutter", "Electron.js", "Node.js"],
+    //media: "",
   },
 ] as const;

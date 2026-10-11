@@ -1,4 +1,5 @@
 import { site } from "@/data/site";
+import { HeroPortrait } from "@/components/hero/HeroPortrait";
 
 export function Hero() {
   return <section id="entry" className="hero" aria-labelledby="hero-title">
@@ -13,6 +14,7 @@ export function Hero() {
         <a className="explore-link" href="#about">EXPLORE <span aria-hidden="true">↓</span></a>
       </div>
     </div>
+    <HeroPortrait />
     <div className="hero-bottomline"><span><b className="status-dot" /> AVAILABLE FOR OPPORTUNITIES</span><span>SCROLL TO EXPLORE ↓</span></div>
   </section>;
 }
