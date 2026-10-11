@@ -162,6 +162,19 @@ a:focus-visible { outline: 2px solid var(--accent); outline-offset: 5px; }
 .lab-note h3 { max-width: 12ch; margin: 0; font-family: var(--font-display), Georgia, serif; font-size: clamp(2rem, 3vw, 3.25rem); font-weight: 300; letter-spacing: -.045em; line-height: .87; }
 .lab-note p { margin: 1.2rem 0 0; color: var(--text-muted); font-size: .91rem; line-height: 1.5; }
 
+.contact-section { position: relative; display: flex; flex-direction: column; min-height: 100svh; padding: clamp(6rem, 11vw, 10rem) var(--page-padding) 1.6rem; scroll-margin-top: var(--header-height); overflow: hidden; border-top: 1px solid var(--line); background: radial-gradient(ellipse at 75% 65%, rgba(169,111,50,.16), transparent 45%), var(--bg); }
+.contact-section::before { content: ""; position: absolute; width: min(70vw, 65rem); aspect-ratio: 1; right: -30%; bottom: -47%; border: 1px solid var(--accent-soft); border-radius: 50%; opacity: .65; pointer-events: none; }
+.contact-body { position: relative; z-index: 1; width: min(100%, 80rem); margin: auto 0 auto; }
+.contact-body h3 { margin: clamp(1.4rem, 3vw, 2.5rem) 0 0; font-family: var(--font-display), Georgia, serif; font-size: clamp(4rem, 11vw, 11rem); font-weight: 300; letter-spacing: -.075em; line-height: .74; }
+.contact-body h3 em { color: var(--accent); font-style: italic; }
+.contact-links { display: flex; flex-wrap: wrap; gap: .7rem; margin-top: clamp(3rem, 8vw, 7rem); }
+.contact-links a { position: relative; display: flex; gap: 1.4rem; min-width: 11.5rem; justify-content: space-between; padding: .95rem 1rem; border: 1px solid var(--line-strong); color: var(--text); font: 500 .68rem/1 var(--font-mono), monospace; letter-spacing: .11em; transition: border-color 180ms ease, background 180ms ease, color 180ms ease; }
+.contact-links a:hover { border-color: var(--accent); background: var(--accent); color: var(--bg); }
+.contact-links a span { color: var(--accent); transition: color 180ms ease, transform 180ms ease; }
+.contact-links a:hover span { color: inherit; transform: translate(2px,-2px); }
+.contact-footer { position: relative; z-index: 1; display: flex; justify-content: space-between; gap: 1rem; padding-top: 1.3rem; border-top: 1px solid var(--line); color: var(--text-subtle); font: 500 .6rem/1 var(--font-mono), monospace; letter-spacing: .1em; }
+.contact-footer span:first-child { color: var(--text-muted); }
+
 .custom-cursor { position: fixed; top: -12px; left: -12px; z-index: 30; display: none; width: 24px; height: 24px; place-items: center; pointer-events: none; mix-blend-mode: difference; will-change: transform; }
 .custom-cursor span { color: white; font: 400 1.5rem/1 var(--font-mono), monospace; }
 @media (pointer: fine) { .has-custom-cursor, .has-custom-cursor a { cursor: none; } .custom-cursor { display: grid; } }
@@ -178,4 +191,5 @@ a:focus-visible { outline: 2px solid var(--accent); outline-offset: 5px; }
 @media (max-width: 700px) { .build-section { padding-top: 6.5rem; } .build-intro { grid-template-columns: 1fr; gap: 1.2rem; margin: 4.5rem 0 3rem; } .capability-matrix { grid-template-columns: 1fr; } .capability-controls { border-right: 0; border-bottom: 1px solid var(--line-strong); } .capability-controls button { padding: 1.1rem; } .capability-panel { min-height: 0; padding: 2rem 1.25rem; } .capability-panel ul { grid-template-columns: 1fr; } .capability-panel li:nth-child(odd) { margin-right: 0; } }
 @media (max-width: 700px) { .experience-section { padding-top: 6.5rem; } .experience-intro { grid-template-columns: 1fr; gap: 1.2rem; margin: 4.5rem 0 4rem; } .timeline::before { left: .35rem; } .timeline-entry { grid-template-columns: 1.5rem 1fr; gap: .8rem; min-height: 0; padding-bottom: 4.5rem; } .timeline-marker { align-items: start; } .timeline-marker span { display: none; } .timeline-marker i { margin: .1rem 0 0; } .timeline-period, .timeline-content { grid-column: 2; } .timeline-period { margin-top: -1.5rem; } .timeline-content h3 { font-size: clamp(2.6rem, 12vw, 4rem); } }
 @media (max-width: 700px) { .lab-section { padding-top: 6.5rem; } .lab-intro { grid-template-columns: 1fr; gap: 1.2rem; margin: 4.5rem 0 3rem; } .lab-notes { grid-template-columns: 1fr; } .lab-note { min-height: 19rem; } .lab-note-stamp { margin-top: 3rem; } }
+@media (max-width: 700px) { .contact-section { padding-top: 6.5rem; } .contact-body h3 { font-size: clamp(3.8rem, 18vw, 5.7rem); line-height: .76; } .contact-links { flex-direction: column; margin-top: 4.5rem; } .contact-links a { min-width: 0; } .contact-footer { flex-wrap: wrap; } .contact-footer span:last-child { display: none; } }
 @media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; } }

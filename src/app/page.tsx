@@ -1,6 +1,7 @@
 import { Hero } from "@/components/hero/Hero";
 import { About } from "@/components/about/About";
 import { HowIBuild } from "@/components/build/HowIBuild";
+import { Contact } from "@/components/contact/Contact";
 import { ExperienceTimeline } from "@/components/experience/ExperienceTimeline";
 import { Lab } from "@/components/lab/Lab";
 import { Navigation } from "@/components/navigation/Navigation";
@@ -23,7 +24,7 @@ export default function Home() {
     <ExperienceTimeline />
     <Lab />
     <FutureSection id="beyond" />
-    <FutureSection id="contact" />
+    <Contact />
     <CustomCursor />
   </main>;
 }
