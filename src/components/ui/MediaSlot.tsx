@@ -3,6 +3,7 @@
 "use client";
 
 import { useState } from "react";
+import { assetPath } from "@/asset-path";
 
 type MediaSlotProps = {
   src: string;
